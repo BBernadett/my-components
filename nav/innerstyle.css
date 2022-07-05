@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    border-radius: 9999px;
+    background-color: rgb(56, 55, 55);
+}
+.active { /*aktív állapotra mutató link*/
+    border: 1px solid hsla(0,0%,100%,.2);
+  border-radius: 9999px;
+    
+  }
+  nav a:hover {
+    color: hsl(0, 0%, 77%);
+    transition: color .15s ease-in-out;
+  }
+  .active:hover {
+    color: #000;
+    background-color: #fff;
+    transition: background-color .15s ease-in-out;
+  }
+  @media (min-width: 768px) {
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav a {
+        float: right;
+      }
+    
+      .home {
+        float: left;
+      }
+      nav::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+  }

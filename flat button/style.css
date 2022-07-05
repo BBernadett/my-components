@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(224, 220, 220);
+}
+.container {
+    margin: 0 auto;
+    width: 70%;
+    background: whitesmoke;
+}
+.button {
+    padding: 0.8rem;
+}
+.btn {
+    text-decoration: none;
+    border: 1px solid #333;
+    color: #333;
+    padding: 0.2rem;
+}
+p {
+    margin: 0.8rem auto 0 0.8rem;
+    display: inline-block;
+}
+.btn:hover {
+    background: #333;
+    color: whitesmoke;
+    transition: background-color .15s ease-in-out;
+}
